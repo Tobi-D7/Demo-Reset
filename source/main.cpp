@@ -26,14 +26,6 @@ int main() {
         {
         	app.exit();
         }
-        if (m3d::buttons::buttonPressed(m3d::buttons::Button::L))
-        {
-      
-        }
-        if (m3d::buttons::buttonPressed(m3d::buttons::Button::R))
-        {
-        
-        }
         if (m3d::buttons::buttonPressed(m3d::buttons::Button::A)){
          if(AMnet()){
 		printf("\n Got am:net handle.");
