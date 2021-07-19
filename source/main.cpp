@@ -19,12 +19,9 @@ int main() {
 
     Init();
 
-    
-
     // main loop
     while (app.isRunning()) {
         // press B to return to the homebrew menu
-       
         if (m3d::buttons::buttonPressed(m3d::buttons::Button::Start))
         {
         	app.exit();
@@ -43,15 +40,10 @@ int main() {
 		amInit();
 		Reset1();
       green.play();
-
-
-     
 	} else {
 		printf("\n Failed to get am:net handle, did you patch svc?");
       red.play();
-
 	}
-        
         }
       
        
