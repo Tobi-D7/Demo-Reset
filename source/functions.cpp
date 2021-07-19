@@ -8,7 +8,6 @@ void Reset1(){
 	else
 		printf("\n\n All done!");
 	    printf("\n Press Start to exit...");
-       
 }
 
 bool AMnet(){
@@ -19,6 +18,4 @@ bool AMnet(){
 	} else {
 		return false;
 	}
-      
-       
 }
