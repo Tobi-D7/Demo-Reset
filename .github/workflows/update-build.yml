@@ -29,7 +29,6 @@ jobs:
         uses: actions/checkout@v1
         with:
           submodules: recursive
- 
       - name: Build
         id: build
         run: |
@@ -91,9 +90,7 @@ jobs:
 
             curl -XPOST -H "$AUTH_HEADER" -H "$CONTENT_LENGTH" -H "$CONTENT_TYPE" --upload-file "$file" "$UPLOAD_URL"
           done
-     
       - name: Release to NPXTobi/update-builds
-
         run: |
           AUTH_HEADER="Authorization: token ${{ secrets.TWLBOT_TOKEN }}"
           CONTENT_TYPE="Content-Type: application/json"
